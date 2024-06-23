@@ -1,0 +1,31 @@
+<h1>One way data Binding</h1>
+<p>Interpolation</p>
+<h2>Welcome   {{firstname}}  {{lastname}}</h2>
+
+
+<h1>Property Binding</h1>
+<input type="text" ng-bind="Simple"><br>
+<h5>Learning property binding on {{Simple}}</h5>
+
+<h3 style="text-align: center;color:green;">Property Binding</h3>
+<h1 [innerText]= "title1"></h1>
+<h2>Example1</h2>
+<!-- Here "isDisabled" is a variable whose value (True or false ) will be changed in app.appcomponent.ts.
+  So property binding -->
+<button [disabled]="isDisabled">I am disabled</button>
+
+<h1>Event Binding</h1>
+<p>Event Binding</p>
+<button class="btn btn-block" (click)="Clickme($event)">Click Here</button>
+
+
+<h1>Two way data Binding</h1>
+<h2>Example 2</h2>
+<input type="text" name="value" [(ngModel)]="value">
+<p>You entered  {{value}}</p>
+<button (click)="clearValue()">Clear</button>
+
+
+
+
+

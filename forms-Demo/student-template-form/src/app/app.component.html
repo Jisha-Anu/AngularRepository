@@ -1,0 +1,32 @@
+<h1>Template Driven Forms Example</h1>
+<div class="container">
+  <div class="row">
+    <div class="Form-bg">
+      <form #studentregform="ngForm" (ngSubmit)="RegisterStudent(studentregform)">
+        <div>
+          <h1>Student Registration Form</h1>
+        </div>
+        <div>
+          <label for="firstname">Firstname</label>
+          <input type="text" id="firstname" name="firstname" ngModel>
+        </div>
+
+        <div>
+          <label for="lastname">Lastname</label>
+          <input type="text" id="lastname" name="lastname" ngModel>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" ngModel >
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

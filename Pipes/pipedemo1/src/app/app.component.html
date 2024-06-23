@@ -1,0 +1,15 @@
+<h1>Angular pipes for data transformation</h1>
+<p>{{x | date: 'yyyy-MM-dd h-mm-ss a'}}</p>
+<div class="container">
+    <h1>Student Information</h1>
+    <table class="table table-striped">
+        <tr><th>Student ID</th><th>Stident Name</th><th>Student Gender</th></tr>
+        @for(list of students ;track list.studId){
+            <tr>
+                <td>{{list.studId}}</td>
+                <td>{{list.name}}</td>
+                <td>{{list.gender | customhello}}</td>
+            </tr>
+        }
+    </table>
+</div>
